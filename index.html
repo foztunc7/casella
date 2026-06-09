@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casella | Office Seating, Designed &amp; Manufactured in Turkey</title>
+<meta name="description" content="Casella designs and manufactures premium office seating since 1997. Executive, task, mesh, project, waiting and gaming chairs plus office sofas. ISO 9001:2015. Exported across Europe, the Middle East, Africa and Asia.">
+<meta name="theme-color" content="#791017">
+<meta property="og:title" content="Casella | Office Seating, Designed &amp; Manufactured in Turkey">
+<meta property="og:description" content="Premium office seating since 1997. A catalog of executive, task, mesh, project and gaming chairs and office sofas.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/brand/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bordeaux:#791017; --bordeaux-d:#5b1014; --maroon:#5b3235; --wine-glow:rgba(121,16,23,.16);
+  --ink:#17120F; --ink-2:#3a322d; --charcoal:#241D19;
+  --cream:#F7F3EC; --paper:#FCFAF6; --sand:#EFE8DC; --line:#E2D9CB; --line-d:#C9BCA8;
+  --white:#fff; --muted:#8A7E70; --muted-2:#A99C8C;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+  --shadow:0 30px 70px -30px rgba(23,18,15,.45);
+  --shadow-sm:0 14px 40px -24px rgba(23,18,15,.4);
+}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+ul{list-style:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+.serif{font-family:var(--serif)}
+.eyebrow{display:inline-flex;align-items:center;gap:11px;font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--bordeaux)}
+.eyebrow::before{content:"";width:30px;height:1px;background:var(--bordeaux)}
+.eyebrow.light{color:#E8C9B6}
+.eyebrow.light::before{background:#E8C9B6}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.04;letter-spacing:-.01em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:11px;font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.04em;padding:15px 30px;border-radius:2px;cursor:pointer;border:1px solid transparent;transition:transform .25s,background .25s,color .25s,border-color .25s,box-shadow .25s}
+.btn svg{width:16px;height:16px}
+.btn-primary{background:var(--bordeaux);color:#fff;box-shadow:0 14px 34px -16px rgba(121,16,23,.7)}
+.btn-primary:hover{background:var(--bordeaux-d);transform:translateY(-2px);box-shadow:0 20px 46px -16px rgba(121,16,23,.85)}
+.btn-ink{background:var(--ink);color:var(--cream)}
+.btn-ink:hover{background:#000;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-d)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn-ghost.light{color:#fff;border-color:rgba(255,255,255,.35)}
+.btn-ghost.light:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+
+/* top utility bar */
+.util{background:var(--ink);color:#cdbfb0;font-size:12px;letter-spacing:.04em}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.util b{color:#fff;font-weight:600}
+.util .r{display:flex;gap:20px;align-items:center}
+.util .r a{color:#cdbfb0;transition:color .2s}
+.util .r a:hover{color:#fff}
+.util .lang{border:1px solid rgba(255,255,255,.22);padding:2px 9px;border-radius:2px;color:#fff;font-weight:600}
+
+/* header */
+header.site{position:sticky;top:0;z-index:90;background:rgba(252,250,246,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:30px;height:84px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand img{height:34px;width:auto}
+.brand .bn{font-family:var(--serif);font-weight:700;font-size:1.5rem;letter-spacing:.08em;color:var(--ink);text-transform:uppercase}
+.nav{display:flex;align-items:center;gap:32px}
+.nav a{font-size:13.5px;font-weight:600;letter-spacing:.02em;color:var(--ink-2);transition:color .2s;position:relative}
+.nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1.5px;background:var(--bordeaux);transition:width .25s}
+.nav a:hover{color:var(--bordeaux)}
+.nav a:hover::after{width:100%}
+.hd-cta{display:inline-flex}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+.burger span{width:24px;height:2px;background:var(--ink);border-radius:2px}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(120deg,#1a1411 0%,#241814 52%,#3a1417 100%);color:var(--cream);overflow:hidden}
+.hero::before{content:"";position:absolute;top:-200px;right:-140px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(121,16,23,.5),transparent 64%);pointer-events:none}
+.hero::after{content:"";position:absolute;bottom:-260px;left:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.05),transparent 66%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:78px 32px 86px}
+.hero h1{font-size:clamp(3rem,6vw,5.4rem);font-weight:600;line-height:.98;letter-spacing:-.015em;margin:24px 0 0}
+.hero h1 em{font-style:italic;color:#E8C9B6}
+.hero .lead{font-family:var(--sans);font-size:1.12rem;line-height:1.7;color:#d9ccbf;max-width:500px;margin-top:26px}
+.hero .hcta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.hero .htrust{display:flex;gap:30px;flex-wrap:wrap;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.14)}
+.hero .htrust div{display:flex;flex-direction:column;gap:3px}
+.hero .htrust b{font-family:var(--serif);font-weight:600;font-size:1.5rem;color:#fff;line-height:1}
+.hero .htrust span{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#b6a596}
+/* hero visual */
+.hero-fig{position:relative;display:grid;place-items:center;min-height:460px}
+.hero-fig .disc{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#7a2026,#4a1014 70%);box-shadow:inset 0 6px 60px rgba(0,0,0,.45),0 40px 90px -30px rgba(0,0,0,.6)}
+.hero-fig .ring{position:absolute;width:486px;height:486px;border-radius:50%;border:1px solid rgba(232,201,182,.25)}
+.hero-fig img{position:relative;z-index:2;width:78%;max-width:420px;filter:drop-shadow(0 40px 50px rgba(0,0,0,.55))}
+.hero-fig .tagpill{position:absolute;z-index:3;bottom:34px;right:6px;background:rgba(252,250,246,.95);color:var(--ink);border-radius:3px;padding:12px 16px;box-shadow:var(--shadow-sm);animation:bob 5s ease-in-out infinite}
+.hero-fig .tagpill .m{font-family:var(--serif);font-weight:700;font-size:1.15rem;line-height:1}
+.hero-fig .tagpill .c{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--bordeaux);font-weight:600;margin-top:3px}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+/* marquee credential strip */
+.creds{background:var(--ink);color:#cdbfb0;border-top:1px solid rgba(255,255,255,.07)}
+.creds .row{display:flex;align-items:center;gap:54px;padding:20px 0;overflow:hidden;white-space:nowrap;justify-content:center;flex-wrap:wrap}
+.creds .c{display:inline-flex;align-items:center;gap:11px;font-size:13px;letter-spacing:.06em;font-weight:500}
+.creds .c svg{width:18px;height:18px;color:#E8C9B6}
+.creds .dot{width:4px;height:4px;border-radius:50%;background:var(--bordeaux);opacity:.9}
+
+/* section base */
+section.blk{padding:118px 0;position:relative}
+.shead{max-width:680px;margin-bottom:56px}
+.shead.center{margin-left:auto;margin-right:auto;text-align:center}
+.shead.center .eyebrow::before{display:none}
+.shead h2{font-size:clamp(2.5rem,4.6vw,4rem);font-weight:600;margin-top:18px;letter-spacing:-.01em}
+.shead h2 em{font-style:italic;color:var(--bordeaux)}
+.shead p{font-family:var(--sans);font-size:1.05rem;color:var(--muted);line-height:1.75;margin-top:18px;max-width:560px}
+.shead.center p{margin-left:auto;margin-right:auto}
+
+/* intro editorial */
+.intro{background:var(--cream)}
+.intro .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center}
+.intro .big{font-family:var(--serif);font-size:clamp(2rem,3.4vw,3rem);font-weight:500;line-height:1.18;letter-spacing:-.01em}
+.intro .big em{font-style:italic;color:var(--bordeaux)}
+.intro p{font-family:var(--sans);color:var(--ink-2);font-size:1.02rem;line-height:1.85;margin-top:22px}
+.intro p+p{margin-top:16px}
+.intro .sig{margin-top:30px;display:flex;align-items:center;gap:16px}
+.intro .sig .yr{font-family:var(--serif);font-size:2.4rem;font-weight:600;color:var(--bordeaux);line-height:1}
+.intro .sig .yt{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-left:1px solid var(--line-d);padding-left:16px}
+.intro-fig{position:relative;border-radius:4px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/4.5}
+.intro-fig img{width:100%;height:100%;object-fit:cover}
+.intro-fig .cap{position:absolute;left:0;bottom:0;right:0;padding:26px 24px 22px;background:linear-gradient(0deg,rgba(23,18,15,.82),transparent);color:#fff}
+.intro-fig .cap .t{font-family:var(--serif);font-size:1.3rem;font-weight:600}
+.intro-fig .cap .s{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#E8C9B6;margin-top:3px}
+
+/* collections grid */
+.coll{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.cc{position:relative;border-radius:4px;overflow:hidden;background:var(--ink);min-height:300px;display:flex;align-items:flex-end;cursor:pointer}
+.cc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .5s;filter:saturate(1.02)}
+.cc::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(23,18,15,.86) 0%,rgba(23,18,15,.18) 46%,rgba(23,18,15,.05) 100%);transition:background .4s}
+.cc:hover img{transform:scale(1.07)}
+.cc:hover::after{background:linear-gradient(0deg,rgba(91,16,20,.9) 0%,rgba(23,18,15,.28) 50%,rgba(23,18,15,.06) 100%)}
+.cc .ci{position:relative;z-index:2;padding:30px 30px 28px;color:#fff;width:100%}
+.cc .ci .n{font-family:var(--serif);font-size:1.85rem;font-weight:600;line-height:1.05}
+.cc .ci .d{font-size:13.5px;color:rgba(255,255,255,.82);margin-top:6px;max-width:330px;line-height:1.55}
+.cc .ci .go{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#E8C9B6;opacity:0;transform:translateY(8px);transition:all .35s}
+.cc:hover .ci .go{opacity:1;transform:none}
+.cc .ci .go svg{width:15px;height:15px;transition:transform .25s}
+.cc:hover .ci .go svg{transform:translateX(4px)}
+.cc .tag{position:absolute;top:20px;left:20px;z-index:2;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(121,16,23,.92);padding:6px 12px;border-radius:2px}
+/* spans */
+.cc.sp7{grid-column:span 7}.cc.sp5{grid-column:span 5}.cc.sp4{grid-column:span 4}.cc.sp6{grid-column:span 6}.cc.sp3{grid-column:span 3}
+.cc.tall{min-height:420px}
+/* gaming card (no photo) */
+.cc.gaming{background:radial-gradient(120% 120% at 30% 0%,#3a1417,#17120F 70%)}
+.cc.gaming::after{background:linear-gradient(0deg,rgba(23,18,15,.7),transparent 60%)}
+.cc.gaming .gico{position:absolute;top:50%;left:50%;transform:translate(-50%,-58%);z-index:1;color:rgba(232,201,182,.22)}
+.cc.gaming .gico svg{width:120px;height:120px}
+
+/* signature model spotlight */
+.spotlight{background:linear-gradient(120deg,#1a1411,#2b1715 60%,#3a1417);color:var(--cream)}
+.spotlight .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+.spot-fig{position:relative;display:grid;place-items:center;min-height:480px}
+.spot-fig .disc{position:absolute;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle at 50% 36%,#6f1d23,#3e0e12 72%);box-shadow:inset 0 4px 60px rgba(0,0,0,.5)}
+.spot-fig img{position:relative;z-index:2;width:80%;max-width:430px;filter:drop-shadow(0 44px 54px rgba(0,0,0,.6))}
+.spot-fig .num{position:absolute;z-index:1;left:-6px;top:6px;font-family:var(--serif);font-size:11rem;font-weight:600;color:rgba(255,255,255,.05);line-height:1}
+.spot h2{font-size:clamp(2.6rem,4.6vw,4.2rem);font-weight:600;margin:18px 0 0}
+.spot h2 em{font-style:italic;color:#E8C9B6}
+.spot .lead{font-family:var(--sans);color:#d9ccbf;font-size:1.05rem;line-height:1.75;margin-top:20px;max-width:480px}
+.spot .feats{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin-top:30px;max-width:500px}
+.spot .feats div{display:flex;align-items:flex-start;gap:11px;font-size:14px;color:#e7dccf}
+.spot .feats svg{width:18px;height:18px;color:#E8C9B6;flex-shrink:0;margin-top:2px}
+.spot .scta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+
+/* model name showcase */
+.models{background:var(--cream)}
+.model-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px}
+.mname{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:26px 24px;transition:transform .3s,border-color .3s,background .3s;overflow:hidden}
+.mname:hover{transform:translateY(-5px);border-color:var(--bordeaux);background:#fff}
+.mname::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--bordeaux);transform:scaleY(0);transform-origin:top;transition:transform .3s}
+.mname:hover::before{transform:scaleY(1)}
+.mname .mn{font-family:var(--serif);font-size:1.7rem;font-weight:600;letter-spacing:.01em}
+.mname .mc{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.models .note{margin-top:24px;font-size:14px;color:var(--muted);font-style:italic;font-family:var(--serif);font-size:1.05rem}
+
+/* capabilities */
+.caps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.cap{background:var(--paper);padding:40px 34px;transition:background .3s}
+.cap:hover{background:#fff}
+.cap .ci{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--cream);color:var(--bordeaux);margin-bottom:22px;transition:background .3s,color .3s}
+.cap:hover .ci{background:var(--bordeaux);color:#fff}
+.cap .ci svg{width:24px;height:24px}
+.cap h3{font-size:1.5rem;font-weight:600;margin-bottom:10px}
+.cap p{font-family:var(--sans);font-size:14.5px;color:var(--muted);line-height:1.7}
+
+/* stats band */
+.stats{background:var(--bordeaux);color:#fff;position:relative;overflow:hidden}
+.stats::before{content:"";position:absolute;top:-160px;right:-100px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 65%)}
+.stats .wrap{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;padding-top:76px;padding-bottom:76px}
+.st{text-align:center}
+.st b{font-family:var(--serif);font-weight:600;font-size:clamp(2.8rem,4.6vw,3.8rem);line-height:1;display:block}
+.st span{display:block;margin-top:12px;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#f0d3c4}
+.st .sub{font-size:11px;letter-spacing:.04em;color:#e0b6a6;margin-top:5px;text-transform:none}
+
+/* quality band */
+.quality{background:var(--ink);color:var(--cream)}
+.quality .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.quality-fig{border-radius:4px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:5/4}
+.quality-fig img{width:100%;height:100%;object-fit:cover}
+.quality h2{font-size:clamp(2.4rem,4.2vw,3.6rem);font-weight:600;margin:16px 0 0}
+.quality h2 em{font-style:italic;color:#E8C9B6}
+.quality p{font-family:var(--sans);color:#cdbfb0;font-size:1.02rem;line-height:1.8;margin-top:20px;max-width:500px}
+.quality .qlist{margin-top:28px;display:flex;flex-direction:column;gap:14px}
+.quality .qlist div{display:flex;align-items:flex-start;gap:13px;font-size:14.5px;color:#e7dccf}
+.quality .qlist svg{width:20px;height:20px;color:#E8C9B6;flex-shrink:0;margin-top:2px}
+
+/* sub-brands / lines */
+.lines{background:var(--cream)}
+.line-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+.lcard{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:44px 38px;text-align:center;transition:transform .3s,box-shadow .3s,border-color .3s}
+.lcard:hover{transform:translateY(-6px);box-shadow:var(--shadow-sm);border-color:var(--line-d)}
+.lcard .ln{font-family:var(--serif);font-size:2.4rem;font-weight:600;color:var(--bordeaux);letter-spacing:.02em}
+.lcard .ld{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.65}
+
+/* markets */
+.markets{background:var(--ink);color:var(--cream);text-align:center}
+.markets h2{font-size:clamp(2.2rem,4vw,3.4rem);font-weight:600}
+.markets h2 em{font-style:italic;color:#E8C9B6}
+.markets p{font-family:var(--sans);color:#cdbfb0;max-width:600px;margin:18px auto 0;line-height:1.75}
+.mreg{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:40px}
+.mreg span{border:1px solid rgba(255,255,255,.18);border-radius:100px;padding:11px 24px;font-size:13.5px;font-weight:500;letter-spacing:.03em;color:#e7dccf;transition:all .25s}
+.mreg span:hover{border-color:#E8C9B6;color:#fff;background:rgba(232,201,182,.08)}
+.mreg span.core{background:var(--bordeaux);border-color:var(--bordeaux);color:#fff}
+
+/* CTA */
+.cta{background:var(--cream);text-align:center}
+.cta .box{position:relative;background:linear-gradient(120deg,#1a1411,#2b1715 58%,#3a1417);color:var(--cream);border-radius:6px;padding:90px 48px;overflow:hidden}
+.cta .box::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 22% 28%,rgba(121,16,23,.45),transparent 52%),radial-gradient(circle at 80% 76%,rgba(232,201,182,.1),transparent 54%);pointer-events:none}
+.cta .box>*{position:relative}
+.cta h2{font-size:clamp(2.6rem,5vw,4.4rem);font-weight:600;line-height:1.02}
+.cta h2 em{font-style:italic;color:#E8C9B6}
+.cta p{font-family:var(--sans);color:#d9ccbf;font-size:1.1rem;max-width:540px;margin:20px auto 36px;line-height:1.7}
+.cta .cbtns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* footer */
+footer.site{background:#120E0B;color:#9a8c7d;padding:80px 0 34px}
+.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:46px;margin-bottom:54px}
+.foot .fb .brand{margin-bottom:18px}
+.foot .fb .brand .bn{color:#fff}
+.foot .fb p{font-size:14px;line-height:1.75;max-width:300px}
+.foot h5{font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#E8C9B6;margin-bottom:18px}
+.foot ul{display:flex;flex-direction:column;gap:11px}
+.foot a{font-size:14px;color:#9a8c7d;transition:color .2s}
+.foot a:hover{color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:26px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#6f6356}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:1080px){
+  .hero .wrap,.intro .wrap,.spotlight .wrap,.quality .wrap{grid-template-columns:1fr;gap:48px}
+  .hero-fig,.spot-fig{order:-1;min-height:360px}
+  .coll{grid-template-columns:repeat(6,1fr)}
+  .cc.sp7,.cc.sp5,.cc.sp4,.cc.sp6,.cc.sp3{grid-column:span 6}
+  .model-grid{grid-template-columns:repeat(2,1fr)}
+  .caps{grid-template-columns:1fr}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .line-row{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr}
+  .nav{display:none}.hd-cta{display:none}.burger{display:flex}
+}
+@media(max-width:560px){
+  .wrap{padding:0 20px}
+  section.blk{padding:78px 0}
+  .hero .wrap{padding:54px 20px 64px}
+  .model-grid{grid-template-columns:1fr 1fr}
+  .stats .wrap{grid-template-columns:1fr 1fr;gap:40px 20px}
+  .foot{grid-template-columns:1fr}
+  .util .r{display:none}
+  .cta .box{padding:60px 24px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- UTILITY BAR -->
+<div class="util">
+  <div class="wrap">
+    <div><b>Casella Buro Sistemleri</b> &nbsp;&middot;&nbsp; Designed &amp; manufactured in Turkey since 1997</div>
+    <div class="r">
+      <a href="#collections">Catalog</a>
+      <a href="#contact">Contact</a>
+      <span class="lang">EN</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="wrap hd">
+    <a href="#top" class="brand" aria-label="Casella home">
+      <img src="assets/brand/logo.png" alt="Casella">
+      <span class="bn">Casella</span>
+    </a>
+    <nav class="nav">
+      <a href="#collections">Collections</a>
+      <a href="#signature">Executive</a>
+      <a href="#models">Models</a>
+      <a href="#about">About</a>
+      <a href="#quality">Quality</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary hd-cta">Request the Catalog</a>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow light">Office Seating Manufacturer</span>
+      <h1>Seating, engineered<br>for the <em>way we work.</em></h1>
+      <p class="lead">For more than 25 years, Casella has designed and manufactured office chairs in Turkey, supplying executives, workspaces and projects across four continents. This is our collection.</p>
+      <div class="hcta">
+        <a href="#collections" class="btn btn-primary">Explore Collections
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost light">Request the Catalog</a>
+      </div>
+      <div class="htrust">
+        <div><b>1997</b><span>Established</span></div>
+        <div><b>ISO 9001</b><span>2015 Certified</span></div>
+        <div><b>4</b><span>Continents served</span></div>
+        <div><b>In-house</b><span>Design &amp; R&amp;D</span></div>
+      </div>
+    </div>
+    <div class="hero-fig">
+      <div class="ring"></div>
+      <div class="disc"></div>
+      <img src="assets/products/boss.jpg" alt="Casella Boss executive office chair">
+      <div class="tagpill">
+        <div class="m">Boss</div>
+        <div class="c">Executive Series</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIAL STRIP -->
+<div class="creds">
+  <div class="wrap">
+    <div class="row">
+      <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 6L9 17l-5-5"/></svg> ISO 9001:2015 Quality System</span>
+      <span class="dot"></span>
+      <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Manufactured in Turkey</span>
+      <span class="dot"></span>
+      <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg> Exported across 4 continents</span>
+      <span class="dot"></span>
+      <span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21 8 14 2 9.4h7.6z"/></svg> R&amp;D, Patent &amp; Design Ownership</span>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO / ABOUT -->
+<section class="blk intro" id="about">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">About Casella</span>
+      <p class="big" style="margin-top:20px">A respected name in office seating, <em>built on quality and trust.</em></p>
+      <p>Since its establishment in 1997, Casella has earned a well-respected place in the domestic and international market through an expert team, a clear quality understanding and a customer-oriented approach.</p>
+      <p>Operating across the full office-chair spectrum, Casella meets every kind of workplace need through a wide product range, an extensive service network and authorized dealers, with serious contributions to the industry in R&amp;D, patent, design and total excellence.</p>
+      <div class="sig">
+        <span class="yr">1997</span>
+        <span class="yt">Founded in Turkey<br>Office seating manufacturer</span>
+      </div>
+    </div>
+    <figure class="intro-fig rv">
+      <img src="assets/brand/factory.jpg" alt="Casella production facility in Turkey">
+      <figcaption class="cap">
+        <div class="t">Our Production Facility</div>
+        <div class="s">Design &middot; Manufacture &middot; Service</div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section class="blk" id="collections" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow">The Collection</span>
+      <h2>Seating for every <em>seat in the house.</em></h2>
+      <p>From the executive office to the open workspace, the meeting room to the gaming desk, Casella's families cover the complete range of professional seating.</p>
+    </div>
+    <div class="coll">
+
+      <a class="cc sp7 tall rv" href="#contact">
+        <span class="tag">Executive &amp; Working</span>
+        <img src="assets/categories/yonetici-koltuklari.jpg" alt="Casella executive office chairs">
+        <span class="ci">
+          <span class="n">Executive &amp; Working Chairs</span>
+          <span class="d">High-back leadership seating with refined upholstery, ergonomic support and a presence built for the corner office.</span>
+          <span class="go">View collection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="cc sp5 tall rv" href="#contact">
+        <span class="tag">Mesh</span>
+        <img src="assets/categories/fileli-koltuklar.jpg" alt="Casella mesh office chairs">
+        <span class="ci">
+          <span class="n">Mesh Chairs</span>
+          <span class="d">Breathable, light and responsive seating for all-day comfort in the modern workspace.</span>
+          <span class="go">View collection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="cc sp4 rv" href="#contact">
+        <span class="tag">Task</span>
+        <img src="assets/categories/calisma-koltuklari.jpg" alt="Casella task and working chairs">
+        <span class="ci">
+          <span class="n">Task Chairs</span>
+          <span class="d">Everyday workhorses, engineered for posture and movement.</span>
+          <span class="go">View collection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="cc sp4 rv" href="#contact">
+        <span class="tag">Waiting</span>
+        <img src="assets/categories/bekleme-koltuklari.jpg" alt="Casella waiting and guest chairs">
+        <span class="ci">
+          <span class="n">Waiting Chairs</span>
+          <span class="d">Guest and reception seating that sets the tone at the door.</span>
+          <span class="go">View collection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="cc sp4 rv" href="#contact">
+        <span class="tag">Project</span>
+        <img src="assets/categories/proje-koltuklari.jpg" alt="Casella project chairs">
+        <span class="ci">
+          <span class="n">Project Chairs</span>
+          <span class="d">Scalable seating specified for offices, campuses and contract projects.</span>
+          <span class="go">View collection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="cc sp6 rv" href="#contact">
+        <span class="tag">Sofas</span>
+        <img src="assets/categories/kanepeler.jpg" alt="Casella office sofas">
+        <span class="ci">
+          <span class="n">Office Sofas</span>
+          <span class="d">Soft seating for lobbies, lounges and collaborative spaces.</span>
+          <span class="go">View collection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="cc sp3 rv" href="#contact">
+        <span class="tag">Accessories</span>
+        <img src="assets/categories/aksesuarlar.jpg" alt="Casella chair accessories and components">
+        <span class="ci">
+          <span class="n">Accessories</span>
+          <span class="d">Bases, arms and components.</span>
+          <span class="go">View <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+      <a class="cc sp3 gaming rv" href="#contact">
+        <span class="tag">Gaming</span>
+        <span class="gico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 12h4M8 10v4M15 11h.01M18 13h.01M17 7a5 5 0 0 1 5 5l-.5 5a3 3 0 0 1-5.4 1.5L14 20h-4l-2.1 1.5A3 3 0 0 1 2.5 20L2 15a5 5 0 0 1 5-5z"/></svg></span>
+        <span class="ci">
+          <span class="n">Gaming Chairs</span>
+          <span class="d">Racing-style support, off the clock.</span>
+          <span class="go">View <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- SIGNATURE MODEL -->
+<section class="blk spotlight spot" id="signature">
+  <div class="wrap">
+    <div class="spot-fig rv">
+      <span class="num">01</span>
+      <div class="disc"></div>
+      <img src="assets/products/boss.jpg" alt="Casella Boss executive chair">
+    </div>
+    <div class="rv">
+      <span class="eyebrow light">Signature Model</span>
+      <h2>Boss <em>Executive.</em></h2>
+      <p class="lead">The chair that anchors the room. A high-back executive silhouette with deep upholstery, an ergonomic frame and a commanding stance, made to sit at the head of the table for years.</p>
+      <div class="feats">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> High-back executive design</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Ergonomic lumbar support</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Premium upholstery options</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Synchronized tilt mechanism</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Reinforced five-star base</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Height &amp; recline adjustable</div>
+      </div>
+      <div class="scta">
+        <a href="#contact" class="btn btn-primary">Request Specifications</a>
+        <a href="#models" class="btn btn-ghost light">See more models</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODELS SHOWCASE -->
+<section class="blk models" id="models">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow">Selected Models</span>
+      <h2>A few names from <em>the range.</em></h2>
+      <p>Casella's families carry their own identities. A selection from the catalog, each available in multiple backs, bases and upholstery options.</p>
+    </div>
+    <div class="model-grid">
+      <div class="mname rv"><div class="mn">Boss</div><div class="mc">Executive</div></div>
+      <div class="mname rv"><div class="mn">Alexa</div><div class="mc">Task &amp; Mesh</div></div>
+      <div class="mname rv"><div class="mn">Murano</div><div class="mc">Executive</div></div>
+      <div class="mname rv"><div class="mn">Tekno</div><div class="mc">Mesh</div></div>
+      <div class="mname rv"><div class="mn">Ares Plus</div><div class="mc">Working</div></div>
+      <div class="mname rv"><div class="mn">Krono</div><div class="mc">Project</div></div>
+      <div class="mname rv"><div class="mn">Ferre</div><div class="mc">Executive</div></div>
+      <div class="mname rv"><div class="mn">Kent</div><div class="mc">Waiting</div></div>
+      <div class="mname rv"><div class="mn">Poli</div><div class="mc">Project</div></div>
+      <div class="mname rv"><div class="mn">Relax</div><div class="mc">Lounge</div></div>
+      <div class="mname rv"><div class="mn">Sabina</div><div class="mc">Task</div></div>
+      <div class="mname rv"><div class="mn">Wau</div><div class="mc">Mesh</div></div>
+    </div>
+    <p class="note rv">Plus Era, Lowa, Medusa and the full Casella family. Request the catalog for the complete range.</p>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="blk" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow">Why Casella</span>
+      <h2>One manufacturer, <em>from sketch to shipment.</em></h2>
+    </div>
+    <div class="caps">
+      <div class="cap rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18zM2 2l7.6 7.6M11 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></div><h3>In-house design &amp; R&amp;D</h3><p>Every Casella chair is conceived, engineered and refined by our own design and R&amp;D team, with patents and design ownership behind the range.</p></div>
+      <div class="cap rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21 8 14 2 9.4h7.6z"/></svg></div><h3>ISO 9001:2015 quality</h3><p>Design, manufacture, sales and service all operate under a certified Quality Management System, identifying the brand with quality and trust.</p></div>
+      <div class="cap rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><h3>Manufactured in Turkey</h3><p>Production runs under one roof at our own facility, keeping quality, lead times and consistency firmly in our hands.</p></div>
+      <div class="cap rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></div><h3>Global export network</h3><p>Casella exports across Europe, the Middle East, Africa and Asia, backed by an extensive dealer and service network.</p></div>
+      <div class="cap rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3c-3 4-5 6-5 10a5 5 0 0 0 10 0c0-4-2-6-5-10z"/></svg></div><h3>Ergonomic engineering</h3><p>Synchronized mechanisms, lumbar support and adjustable geometry built for posture, movement and the full working day.</p></div>
+      <div class="cap rv"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6"/></svg></div><h3>Project &amp; contract ready</h3><p>From a single executive office to a full corporate fit-out, the project families scale to specification and volume.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap">
+    <div class="st rv"><b data-count="1997" data-raw="1">1997</b><span>Established</span><span class="sub">over 25 years of seating</span></div>
+    <div class="st rv"><b data-count="7" data-suffix="">0</b><span>Seating families</span><span class="sub">executive to gaming</span></div>
+    <div class="st rv"><b data-count="4" data-suffix="">0</b><span>Continents served</span><span class="sub">Europe, ME, Africa, Asia</span></div>
+    <div class="st rv"><b>ISO</b><span>9001:2015 certified</span><span class="sub">quality management</span></div>
+  </div>
+</div>
+
+<!-- QUALITY -->
+<section class="blk quality" id="quality">
+  <div class="wrap">
+    <figure class="quality-fig rv"><img src="assets/brand/factory.jpg" alt="Casella manufacturing facility"></figure>
+    <div class="rv">
+      <span class="eyebrow light">Made to Last</span>
+      <h2>Quality you can <em>sit on for years.</em></h2>
+      <p>Casella identifies its name with quality and trust. Every chair is designed, manufactured, sold and serviced under a certified ISO 9001:2015 Quality Management System, so the chair that leaves our facility is the chair that performs at your desk.</p>
+      <div class="qlist">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Certified quality management, end to end</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Durable mechanisms and reinforced bases</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> A wide choice of upholstery and finishes</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Backed by service and spare-part support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LINES / SUB-BRANDS -->
+<section class="blk lines">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow">Casella Lines</span>
+      <h2>Distinct collections, <em>one standard.</em></h2>
+    </div>
+    <div class="line-row">
+      <div class="lcard rv"><div class="ln">Bella</div><div class="ld">A refined seating line within the Casella range.</div></div>
+      <div class="lcard rv"><div class="ln">Ermes</div><div class="ld">Design-led seating for the contemporary office.</div></div>
+      <div class="lcard rv"><div class="ln">arte&uuml;</div><div class="ld">A distinctive collection carrying the Casella standard.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETS -->
+<section class="blk markets">
+  <div class="wrap rv">
+    <span class="eyebrow light" style="justify-content:center">Casella International</span>
+    <h2 style="margin-top:18px">From Turkey, <em>to the world.</em></h2>
+    <p>From our facility in Turkey, Casella supplies dealers, offices and projects across four continents, and exhibits at international furniture fairs.</p>
+    <div class="mreg">
+      <span class="core">Turkey</span>
+      <span>Europe</span>
+      <span>Middle East</span>
+      <span>Africa</span>
+      <span>Asia</span>
+      <span>Contract &amp; Project</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="blk cta" id="contact">
+  <div class="wrap">
+    <div class="box rv">
+      <span class="eyebrow light" style="justify-content:center">Get in Touch</span>
+      <h2 style="margin-top:16px">Request the <em>Casella catalog.</em></h2>
+      <p>Specifying seating for an office, a project or a showroom? Request the full catalog, ask about a model, or become a Casella dealer.</p>
+      <div class="cbtns">
+        <a href="https://www.casella.com.tr/en/" target="_blank" rel="noopener" class="btn btn-primary">Request the Catalog
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://www.casella.com.tr/en/" target="_blank" rel="noopener" class="btn btn-ghost light">Become a Dealer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot">
+      <div class="fb">
+        <div class="brand"><img src="assets/brand/logo.png" alt="Casella" style="height:30px"> <span class="bn serif" style="font-size:1.4rem;letter-spacing:.08em;text-transform:uppercase;color:#fff">Casella</span></div>
+        <p>Casella Buro Sistemleri San. Tic. Ltd. Sti. Designing and manufacturing office seating in Turkey since 1997, exported across four continents.</p>
+      </div>
+      <div>
+        <h5>Collections</h5>
+        <ul>
+          <li><a href="#collections">Executive &amp; Working</a></li>
+          <li><a href="#collections">Mesh Chairs</a></li>
+          <li><a href="#collections">Task Chairs</a></li>
+          <li><a href="#collections">Project Chairs</a></li>
+          <li><a href="#collections">Office Sofas</a></li>
+          <li><a href="#collections">Gaming Chairs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Casella</a></li>
+          <li><a href="#quality">Quality</a></li>
+          <li><a href="#models">Models</a></li>
+          <li><a href="#contact">Become a Dealer</a></li>
+          <li><a href="https://www.casella.com.tr/en/" target="_blank" rel="noopener">casella.com.tr</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Credentials</h5>
+        <ul>
+          <li>Established 1997</li>
+          <li>ISO 9001:2015</li>
+          <li>Made in Turkey</li>
+          <li>R&amp;D &amp; Design owned</li>
+          <li>Global export network</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; <span id="yr">2026</span> Casella Buro Sistemleri. Catalog presentation.</div>
+      <div>Executive &middot; Task &middot; Mesh &middot; Project &middot; Waiting &middot; Gaming &middot; Sofas</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+  // count up (skip the year/ISO ones flagged data-raw)
+  function animate(el){
+    if(el.getAttribute('data-raw')) return;
+    var target = parseFloat(el.getAttribute('data-count'));
+    var suffix = el.getAttribute('data-suffix') || '';
+    var t0 = null, dur = 1300;
+    function step(ts){ if(!t0) t0 = ts; var p = Math.min((ts-t0)/dur,1);
+      el.textContent = Math.round(target*(1-Math.pow(1-p,3))) + suffix;
+      if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  var co = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ animate(e.target); co.unobserve(e.target); } });
+  }, { threshold: 0.6 });
+  document.querySelectorAll('[data-count]').forEach(function(el){ co.observe(el); });
+
+  var burger = document.querySelector('.burger');
+  if(burger){ burger.addEventListener('click', function(){ var n=document.querySelector('.nav'); n.style.display = (n.style.display==='flex'?'':'flex'); n.style.position='absolute'; n.style.flexDirection='column'; n.style.top='84px'; n.style.left='0'; n.style.right='0'; n.style.background='var(--paper)'; n.style.padding='20px 32px'; n.style.borderBottom='1px solid var(--line)'; }); }
+</script>
+</body>
+</html>
