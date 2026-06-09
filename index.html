@@ -91,9 +91,9 @@ header.site{position:sticky;top:0;z-index:90;background:rgba(252,250,246,.86);ba
 /* product plate (shared) */
 .fig{position:relative;display:grid;place-items:center;min-height:470px}
 .fig .ring{position:absolute;width:480px;height:480px;max-width:92%;border-radius:50%;border:1px solid rgba(232,201,182,.22);pointer-events:none}
-.plate{position:relative;width:100%;max-width:440px;aspect-ratio:1/1.04;background:radial-gradient(125% 90% at 50% 16%,#ffffff 0%,#F1E9DC 78%,#E8DECD 100%);border-radius:12px;border:1px solid rgba(255,255,255,.7);box-shadow:0 44px 90px -34px rgba(0,0,0,.62),0 10px 30px -18px rgba(0,0,0,.5);display:grid;place-items:center;overflow:hidden;z-index:2}
-.plate::after{content:"";position:absolute;bottom:13%;left:50%;transform:translateX(-50%);width:54%;height:8%;border-radius:50%;background:radial-gradient(closest-side,rgba(23,18,15,.22),transparent 72%);filter:blur(3px)}
-.plate img{position:relative;z-index:2;width:82%;max-width:360px;filter:drop-shadow(0 22px 24px rgba(0,0,0,.16))}
+.plate{position:relative;width:100%;max-width:500px;aspect-ratio:1/1.02;border-radius:14px;border:1px solid rgba(255,255,255,.7);box-shadow:0 44px 90px -34px rgba(0,0,0,.62),0 10px 30px -18px rgba(0,0,0,.5);overflow:hidden;z-index:2;background-image:url(assets/products/boss.jpg),radial-gradient(130% 100% at 50% 12%,#ffffff 0%,#F4EDE0 66%,#EADFCE 100%);background-repeat:no-repeat,no-repeat;background-position:center 50%,center;background-size:auto 90%,cover;background-blend-mode:multiply,normal}
+.plate::after{content:"";position:absolute;bottom:9%;left:50%;transform:translateX(-50%);width:50%;height:7%;border-radius:50%;background:radial-gradient(closest-side,rgba(23,18,15,.2),transparent 72%);filter:blur(4px);z-index:1}
+.plate img{display:none}
 .tagpill{position:absolute;z-index:4;bottom:24px;right:0;background:rgba(252,250,246,.97);color:var(--ink);border-radius:3px;padding:13px 18px;box-shadow:var(--shadow-sm);animation:bob 5s ease-in-out infinite}
 .tagpill .m{font-family:var(--serif);font-weight:700;font-size:1.2rem;line-height:1}
 .tagpill .c{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--bordeaux);font-weight:700;margin-top:4px}
